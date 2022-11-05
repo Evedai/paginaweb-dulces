@@ -44,6 +44,8 @@ nav > a{
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+    font-size: 25px;
+    padding-inline: 20px;
 }
 
 nav > a:hover{
@@ -77,8 +79,8 @@ header .textos-header{
     color:#fff;
 }
 
-.contenedor-sobre-nosotros{
-    background-image: url(../IMG/fondochic1opacidad.png);
+.menusfront{
+    background-image: url(../IMG/fondochic1.png);
 }   
 
 
@@ -95,11 +97,19 @@ main .sobre-nosotros{
 }
 .contenedor-sobre-nosotros{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
+    font-size: 20px;
 }
+.contenedor-sobre-nosotros .contenido-textos{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+    
 
-.imagen-about-us{
+
+.imagen-sobre-nosotros{
     width: 48%;
 }
 
@@ -131,10 +141,6 @@ main .sobre-nosotros{
 }
 
 /* ----------------------------------------------Galería de fotos------------------------------------------------------------- */
-
-.portafolio{
-    background: #86c2c2;
-}
 
 .galeria-menufront{
     display: flex;
@@ -186,12 +192,12 @@ main .sobre-nosotros{
 
 /* ----------------------------------------------------------nuestros servicios 1-------------------------------------------------------- */
 
-.cards{
+.card{
     display: flex;
     justify-content: space-evenly;
 }
 
-.cards .card{
+.card .card{
     display: flex;
     width: 46%;
     height: 200px;
@@ -201,7 +207,7 @@ main .sobre-nosotros{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
-.cards .card img{
+.card .card img{
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -210,15 +216,22 @@ main .sobre-nosotros{
     display: block;
 }
 
-.cards .card > .contenido-texto-card{
+.card .card > .contenido-texto-card{
     width: 60%;
     color: #fff;
+   position: absolute;
+   width: 30px;
+   height: 30px;
 }
 
-.cards .card > .contenido-texto-card p{
+.card .card > .contenido-texto-card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 300;
     padding-top: 5px;
 }
+
 
 /* -----------------------------------------------Nuestros servicios 2-------------------------------------------------------- */
 
@@ -307,29 +320,29 @@ footer{
         width: 90%;
     }
 
-    .imagen-about-us{
+    .imagen-sobre-nosotros{
         width: 90%;
     }
 
     /* Galeria */
 
-    .imagen-port{
+    .imagen-menufront{
         width: 44%;
     }
 
     /* Clientes */
 
-    .cards{
+    .card{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .cards .card{
+    .card .card{
         width: 90%;
     }
 
-    .cards .card:first-child{
+    .card .card:first-child{
         margin-bottom: 30px;
     }
      /* servicios */
@@ -373,7 +386,7 @@ footer{
 
     /* ABOUT US */
 
-    .imagen-about-us{
+    .imagen-sobre-nosotros{
         margin-bottom: 60px;
         width: 99%;
     }
@@ -384,20 +397,20 @@ footer{
 
     /* Galeria */
 
-    .imagen-port{
+    .imagen-imagenfront{
         width: 95%;
     }
 
     /* Clients */
 
-    .cards .card{
+    .card .card{
         height: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .cards .card img{
+    .card .card img{
         width: 90px;
         height: 90px;
     }
