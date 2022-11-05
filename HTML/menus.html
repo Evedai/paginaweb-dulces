@@ -8,15 +8,41 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">inicio</a>
-      <a href="menus.html">Menús</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <section class="wrap">
-        <h2>Menú de pmociones</h2>
-    </section>
+    <header class="headermenu">
+      <section class="principalmenu">
+        <nav>
+          <a href="index.html">inicio</a>
+          <a href="menus.html" class="active">Menús</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </section>
+      <section class="imagenfrontmenus">
+        <div class="imagenfrontmenus">
+          <img src="../IMG/logodefi.png" id="logomenus" alt="imagen" />
+        </div>
+      </section>
+    </header>
+    <div class="letrasslider">
+      <h1 class="title">Calidad de productos</h1>
+    </div>
+    <div class="container__slider">
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
 
-    <h1>menus</h1>
+        <div class="tarjetas">
+          <label class="tarjeta" for="item-1" id="selector-1">
+            <img src="../IMG/slider1.jpg" />
+          </label>
+          <label class="tarjeta" for="item-2" id="selector-2">
+            <img src="../IMG/slider2.jpeg" />
+          </label>
+          <label class="tarjeta" for="item-3" id="selector-3">
+            <img src="../IMG/slider3.jpg" />
+          </label>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
