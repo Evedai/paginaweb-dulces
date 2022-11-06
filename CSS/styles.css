@@ -80,12 +80,22 @@ header .textos-header {
 
 }
 
-.imagenlogomenu {
-    position: absolute;
-    width: 300px;
-    top: 200px;
-    left: 300px;
+
+.headermenu {
+
+    position: relative;
+    width: 100%;
 }
+
+.headermenu img {
+    margin: auto;
+    display: block;
+    width: 300px;
+    margin-top: 100px;
+
+
+}
+
 
 
 .textos-header h1 {
@@ -106,7 +116,16 @@ header .textos-header {
 }
 
 .card {
-    background-image: url(../IMG/fondochic1.png);
+    background-color: #e9f7f8;
+    position: relative;
+    width: 100%;
+}
+
+.card p{
+    margin: auto;
+    display: block;
+    padding: 30px;
+    
 }
 
 .nuestrascafeterias h2 {
@@ -183,13 +202,15 @@ main .sobre-nosotros {
     font-weight: 300;
     text-align: justify;
 }
-.botonindex{
+
+.botonindex {
     display: flex;
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    
+
 }
+
 /* ----------------------------------------------Galería de fotos------------------------------------------------------------- */
 
 .galeria-menufront {
@@ -520,40 +541,53 @@ footer {
     margin: 0 auto;
 }
 
+.botonarribadelmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
 /* ------------------------------------------------------------------------------- */
 
-.services{
-	padding: 3rem 0;
+.services {
+    padding: 3rem 0;
 }
-.subServices{
-	text-align: center;
+
+.subServices {
+    text-align: center;
     padding-bottom: 2rem;
     color: #4c4c4c;
 }
-.containerS{
-	width: 90%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
-	grid-gap: 1.2rem;
+
+.containerS {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1.2rem;
 }
-.boxS{
-	padding: 2rem 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 6%);
+
+.boxS {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 / 6%);
 }
-.boxS img{ 
-	width: 400px;
+
+.boxS img {
+    width: 400px;
 }
-h3{
-	color: #4c4c4c;
-	margin: 10px 0;
+
+h3 {
+    color: #4c4c4c;
+    margin: 10px 0;
 }
-.boxS p{
-	text-align: center;
+
+.boxS p {
+    text-align: center;
 }
 
 .subServices h2 {
@@ -564,7 +598,7 @@ h3{
 
 /* -------------------------------------Contacto--------------------------- */
 
-.body-contacto{
+.body-contacto {
     background-image: url(../IMG/fondodelformulario.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -574,7 +608,7 @@ h3{
     background-attachment: fixed;
 }
 
-.formulario-contacto{
+.formulario-contacto {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -583,21 +617,22 @@ h3{
     padding-bottom: 100px;
 }
 
-.form{
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     background-color: white;
-    width: 40%;
-    height: 80%;
+    width: 60%;
+    height: 100%;
     padding: 20px;
-    box-shadow: rgba(0,0,0,0.8,) 0 0 50px;
+    box-shadow: rgba(0, 0, 0, 0.8, ) 0 0 50px;
     border-radius: 10px;
 
 }
 
-input, textarea{
+input,
+textarea {
     border: none;
     resize: none;
     outline: none;
@@ -605,10 +640,11 @@ input, textarea{
     width: 80%;
     margin: 20px;
     transition: all 300ms;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
- input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-bottom-color: #a4f6fc;
 }
 
@@ -618,17 +654,17 @@ button {
     background-color: #a4f6fc;
     padding: 15px;
     border-radius: 3px;
-   margin-top: 10px;
-   cursor: pointer;
-   transition: all 300ms;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 300ms;
 }
 
 button:hover {
-        transform: scale(1.08);
-        box-shadow: 1px solid rgba(0, 0, 0, .9) 0px 0px 10px;
+    transform: scale(1.08);
+    box-shadow: 1px solid rgba(0, 0, 0, .9) 0px 0px 10px;
 }
 
-.footer-formulario{
+.footer-formulario {
     display: flex;
     justify-content: end;
     align-items: flex-end;
